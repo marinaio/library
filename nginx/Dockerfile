@@ -7,12 +7,7 @@ ENV NGINX_VERSION 1.11.10-1~jessie
 RUN apt-get update \
         && apt-get install --no-install-recommends --no-install-suggests -y \
                                                 ca-certificates \
-                                                nginx=${NGINX_VERSION} \
-                                                nginx-module-xslt \
-                                                nginx-module-geoip \
-                                                nginx-module-image-filter \
-                                                nginx-module-perl \
-                                                nginx-module-njs \
+                                                nginx-extras \
                                                 gettext-base \
         && rm -rf /var/lib/apt/lists/*
 
