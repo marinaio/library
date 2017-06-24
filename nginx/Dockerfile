@@ -14,7 +14,7 @@ RUN apt-get update \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
         && ln -sf /dev/stderr /var/log/nginx/error.log
         
-COPY config/* /etc/nginx/
+COPY config /etc/nginx/
 
 EXPOSE 80 443
 
